@@ -1,0 +1,76 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
+
+export default function Navbar() {
+  return (
+    <nav
+      className="navbar navbar-expand-lg shadow-sm"
+      style={{
+        height: "80px",
+        background: "linear-gradient(to right, #FEC8D8, #C6E2E9)",
+      }}
+    >
+      <div className="container-fluid">
+        {/* Brand Name */}
+        {/*
+        <Link className="navbar-brand fw-bold" to="/" style={{ color: "#3B3B3B" }}>
+          BabyBay
+          
+        </Link>*/}
+        {/* Center Logo */}
+        <Link
+          to="/"
+          className="position-absolute top-50 start-50 translate-middle"
+          style={{ textDecoration: "none" }}
+        >
+          <img
+            src="src/assets/Untitled design_20251106_144017_0000.svg"  // 👈 your logo path
+            alt="BabyBay Logo"
+            style={{ height: "500px", width:"400px", objectFit: "contain" }}
+          />
+          
+        </Link>
+
+        {/* Hamburger Menu for mobile */}
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        {/* Navbar Links */}
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav ms-auto">
+            <li className="nav-item">
+              <Link className="nav-link fw-semibold" to="/products">
+              <i className="bi bi-bag "title="Products" style={{ fontSize: "1.3rem", color: "rgb(244, 119, 119)" }}></i> 
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link fw-semibold" to="/cart" >
+              <i className="bi bi-cart" title="Cart" style={{ fontSize: "1.3rem", color: "rgb(244, 119, 119)" }}></i>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link fw-semibold" to="/wishlist">
+              <i className="bi bi-heart-fill" title="Wishlist" style={{ fontSize: "1.3rem", color: "rgb(244, 119, 119)" }}></i>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link fw-semibold" to="/login">
+              <i className="bi bi-person" title="Login" style={{ fontSize: "1.3rem", color:"rgb(244, 119, 119)" }}></i>
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  );
+}

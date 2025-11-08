@@ -1,0 +1,46 @@
+.hero5-section {
+    background: linear-gradient(to bottom, #fff7f9, #f8faff);
+  }
+  
+  /* Card styling */
+  .testimonial-card {
+    width: 443px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    padding: 40px 20px 30px 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* Customer image */
+  .customer-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* round frame */
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #ffb6c1; /* optional border for softness */
+  }
+  
+  /* Testimonial text with different font */
+  .testimonial-text {
+    font-family: 'Comic Neue', cursive; /* playful comic-style */
+    font-size: 1.05rem;
+    color: #3B3B3B;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  /* Customer name */
+  .customer-name {
+    font-family: 'Delius', cursive; /* elegant handwriting style */
+    color: #ff7b9c;
+    font-weight: 600;
+    margin-top: 0;
+  }
