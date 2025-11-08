@@ -1,3 +1,31 @@
+The Baby Bay – Baby & Mothercare E-Commerce Website
+
+**The Baby Bay** is a modern, responsive e-commerce website created with love for mothers and babies.  
+It features a soothing pastel theme, elegant typography, and a delightful user experience that feels warm, caring, and premium.
+
+Features
+
+Elegant UI/UX** built with React & Bootstrap  
+Hero sections** featuring offers, baby care, and maternity products  
+Carousel slides** displaying flat offers and trending items  
+Customer Testimonials** in 3D shadowed cards with round profile images  
+Fully Responsive** design for all devices  
+Footer with Newsletter Signup & Social Links**  
+Pastel Gradient Theme** for a soft and nurturing vibe  
+
+Tech Stack
+
+| Category | Technology |
+|-----------|-------------|
+| Frontend | React (Vite) |
+| Styling | Bootstrap 5, Custom CSS |
+| Icons| Bootstrap Icons / Font Awesome |
+| Fonts| Quicksand, Comic Neue |
+| Build Tool | Vite |
+| Version Control | Git & GitHub |
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
