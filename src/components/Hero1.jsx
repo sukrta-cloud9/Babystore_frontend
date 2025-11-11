@@ -1,5 +1,6 @@
 import React from "react";
-import "./Hero1.css"; // ✅ import the CSS file
+import "./Hero1.css"; 
+import { Link } from "react-router-dom";
 
 export default function Hero1() {
   return (
@@ -10,9 +11,8 @@ export default function Hero1() {
       </div>
       <div className="content2 mt-3">
       <p >Every product brings comfort, safety, and hugs your <br/>little one with warmth.</p>
-      <a href="/products" className="pastel-btn mt-4" style={{ fontFamily: "'Poppins', sans-serif" }}>
-  Shop Now
-</a>
+      
+<Link to="/products" className="pastel-btn">Shop Now</Link>
 
       </div>
      

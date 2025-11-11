@@ -48,7 +48,12 @@ export default function Navbar() {
         {/* Navbar Links */}
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
+          <li className="nav-item">
+            <Link className="nav-link fw-semibold" to="/Home" >
+            <i className="bi bi-house"title="Home"style={{ fontSize: "1.3rem", color: "rgb(244, 119, 119)" }}></i>
+            </Link>
+          </li>
+            <li className="nav-item"> 
               <Link className="nav-link fw-semibold" to="/products">
               <i className="bi bi-bag "title="Products" style={{ fontSize: "1.3rem", color: "rgb(244, 119, 119)" }}></i> 
               </Link>
