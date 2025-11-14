@@ -1,7 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Footer.css";
 
+
 export default function Footer() {
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubscribe = (e) => {
+    e.preventDefault(); // stop page reload
+
+    if (!email) {
+      setMessage("Please enter your email!");
+      return;
+    }
+
+    setMessage("Thanks for subscribing! 💕");
+    setEmail("");
+  };
   return (
     <footer className="footer-section">
       {/* Upper Section */}
@@ -33,11 +48,13 @@ export default function Footer() {
           <div className="col-md-4">
             <h5 className="footer-title">Join Our Newsletter</h5>
             <p>Sign up and stay inspired ✨</p>
-            <form className="newsletter-form d-flex">
+            <form className="newsletter-form d-flex" onSubmit={handleSubscribe}>
               <input
                 type="email"
                 placeholder="Enter your email"
                 className="form-control me-2"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
               <button type="submit" className="btn pastel-btn-footer">
                 Subscribe
@@ -91,4 +108,4 @@ export default function Footer() {
       </div>
     </footer>
   );
-}
+  }

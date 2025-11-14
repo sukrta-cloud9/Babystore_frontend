@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Products from "./pages/Products"; 
+import UserLogin from "./pages/UserLogin";
+import AdminLogin from "./pages/AdminLogin"; 
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/Home" element={<Home />} />
+        <Route path="/login" element={<UserLogin />} />
+        <Route path="/admin-login" element={<AdminLogin />} />
         <Route path="/products" element={<Products />} />
       </Routes>
       <Footer />
