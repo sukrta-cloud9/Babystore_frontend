@@ -1,42 +1,67 @@
 {
-    "users": [
-      {
-        "id": 1,
-        "name": "Admin",
-        "email": "admin@babyshop.com",
-        "password": "admin123",
-        "role": "admin",
-        "active": true
-      },
-      {
-        "id": 2,
-        "name": "Sukrta",
-        "email": "user@babyshop.com",
-        "password": "user123",
-        "role": "user",
-        "active": true
-      }
-    ],
-    "products": [
-      {
-        "id": 1,
-        "name": "Baby Cotton Romper",
-        "category": "Clothing",
-        "price": 799,
-        "image": "https://via.placeholder.com/200",
-        "description": "Soft and breathable cotton romper for babies.",
-        "active": true
-      },
-      {
-        "id": 2,
-        "name": "Baby Feeding Bottle",
-        "category": "Feeding",
-        "price": 299,
-        "image": "https://via.placeholder.com/200",
-        "description": "BPA-free feeding bottle for safe feeding.",
-        "active": true
-      }
-    ],
-    "cart": [],
-    "orders": []
-  }
+  "users": [
+    {
+      "id": "1",
+      "name": "Admin",
+      "email": "admin@babyshop.com",
+      "password": "admin123",
+      "role": "admin",
+      "active": true
+    },
+    {
+      "id": "2",
+      "name": "Sukrta",
+      "email": "user@babyshop.com",
+      "password": "User@12345",
+      "role": "user",
+      "active": true
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Baby Cotton Romper",
+      "category": "Clothing",
+      "price": 799,
+      "image": "https://via.placeholder.com/200",
+      "description": "Soft and breathable cotton romper for babies.",
+      "active": true
+    },
+    {
+      "id": "2",
+      "name": "Baby Feeding Bottle",
+      "category": "Feeding",
+      "price": 299,
+      "image": "https://via.placeholder.com/200",
+      "description": "BPA-free feeding bottle for safe feeding.",
+      "active": true
+    }
+  ],
+  "cart": [
+    {
+      "id": "87e3",
+      "userId": "2",
+      "items": [
+        {
+          "productId": 4,
+          "qty": 2,
+          "name": "Wrappers and Towels",
+          "price": null
+        },
+        {
+          "productId": 3,
+          "qty": 1,
+          "name": "Baby oils and lotions",
+          "price": null
+        },
+        {
+          "productId": 11,
+          "qty": 1,
+          "name": "Wooden Alphabet Board",
+          "price": null
+        }
+      ]
+    }
+  ],
+  "orders": []
+}

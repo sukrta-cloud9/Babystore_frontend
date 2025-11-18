@@ -1,11 +1,19 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useContext, useState, useEffect } from "react";
 
 export const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
 
-  //  Login function
+  // Load user from localStorage
+  useEffect(() => {
+    const savedUser = localStorage.getItem("user");
+    if (savedUser) {
+      setUser(JSON.parse(savedUser));
+    }
+  }, []);
+
+  // LOGIN
   const login = async (email, password) => {
     try {
       const res = await fetch("http://localhost:5000/users");
@@ -22,13 +30,13 @@ export const AuthProvider = ({ children }) => {
       } else {
         return { success: false, message: "Invalid email or password" };
       }
-    } catch (err) {
-      console.error("Login error:", err);
-      return { success: false, message: "Something went wrong!" };
+    } catch (error) {
+      console.error("Login error:", error);
+      return { success: false, message: "Something went wrong" };
     }
   };
 
-  //  Logout
+  // LOGOUT
   const logout = () => {
     setUser(null);
     localStorage.removeItem("user");
@@ -40,3 +48,6 @@ export const AuthProvider = ({ children }) => {
     </AuthContext.Provider>
   );
 };
+
+// ✅ THIS WAS MISSING — must export
+export const useAuth = () => useContext(AuthContext);
