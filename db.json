@@ -15,6 +15,30 @@
       "password": "User@12345",
       "role": "user",
       "active": true
+    },
+    {
+      "id": "1764410686242",
+      "name": "Sukrta Ga",
+      "email": "testuser@example.com",
+      "password": "Test@1234",
+      "role": "user",
+      "active": true
+    },
+    {
+      "id": "1764411219682",
+      "name": "sukrta",
+      "email": "testuser1@example.com",
+      "password": "Test@1234",
+      "role": "user",
+      "active": true
+    },
+    {
+      "id": "1764411674364",
+      "name": "sukrta",
+      "email": "testuser3@example.com",
+      "password": "Sukrta!2025#Baby",
+      "role": "user",
+      "active": true
     }
   ],
   "products": [

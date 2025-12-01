@@ -141,6 +141,7 @@ export default function Navbar() {
               </Link>
             </li>
 
+            {/* LOGIN link */}
             {!user && (
               <li className="nav-item">
                 <Link className="nav-link fw-semibold" to="/login">
@@ -156,6 +157,23 @@ export default function Navbar() {
               </li>
             )}
 
+            {/* REGISTER link */}
+            {!user && (
+              <li className="nav-item">
+                <Link className="nav-link fw-semibold" to="/register">
+                  <i
+                    className="bi bi-person-plus"
+                    title="Register"
+                    style={{
+                      fontSize: "1.3rem",
+                      color: "rgb(244, 119, 119)",
+                    }}
+                  ></i>
+                </Link>
+              </li>
+            )}
+
+            {/* ADMIN LOGIN link */}
             {!user && (
               <li className="nav-item">
                 <Link className="nav-link fw-semibold" to="/admin-login">
@@ -171,6 +189,7 @@ export default function Navbar() {
               </li>
             )}
 
+            {/* USER account */}
             {user && user.role === "user" && (
               <li className="nav-item">
                 <Link className="nav-link fw-semibold" to="/profile">
@@ -186,6 +205,7 @@ export default function Navbar() {
               </li>
             )}
 
+            {/* ADMIN dashboard */}
             {user && user.role === "admin" && (
               <li className="nav-item">
                 <Link className="nav-link fw-semibold" to="/admin">
@@ -201,6 +221,7 @@ export default function Navbar() {
               </li>
             )}
 
+            {/* LOGOUT */}
             {user && (
               <li className="nav-item">
                 <button

@@ -3,7 +3,7 @@ import { AuthContext } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const LoginForm = () => {
+const LoginForm = ({ role = null }) => {
   const { login } = useContext(AuthContext);
   const navigate = useNavigate();
 
@@ -13,13 +13,14 @@ const LoginForm = () => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    const result = await login(email, password);
+
+    const result = await login(email, password, role);
 
     if (result.success) {
-      if (result.user.role === "admin") {
-        navigate("/admin");
+      if (role === "admin") {
+        navigate("/"); // redirect admin
       } else {
-        navigate("/"); // Go to homepage
+        navigate("/"); // redirect user
       }
     } else {
       setError(result.message);
@@ -30,7 +31,7 @@ const LoginForm = () => {
     <div className="d-flex justify-content-center align-items-center vh-100 bg-light">
       <div className="card p-4 shadow-lg" style={{ width: "350px", borderRadius: "20px" }}>
         <h3 className="text-center mb-3" style={{ color: "#f27777", fontFamily: "Quicksand" }}>
-          Welcome Back!
+          {role === "admin" ? "Admin Login" : "Welcome Back!"}
         </h3>
 
         <form onSubmit={handleLogin}>
@@ -39,8 +40,8 @@ const LoginForm = () => {
             <input
               type="email"
               className="form-control"
-              placeholder="Enter your email"
               value={email}
+              placeholder="Enter email"
               onChange={(e) => setEmail(e.target.value)}
               required
             />
@@ -51,8 +52,8 @@ const LoginForm = () => {
             <input
               type="password"
               className="form-control"
-              placeholder="Enter your password"
               value={password}
+              placeholder="Enter password"
               onChange={(e) => setPassword(e.target.value)}
               required
             />
@@ -60,7 +61,11 @@ const LoginForm = () => {
 
           {error && <p className="text-danger small">{error}</p>}
 
-          <button type="submit" className="btn w-100 mt-2" style={{ background: "#f27777", color: "white" }}>
+          <button
+            type="submit"
+            className="btn w-100 mt-2"
+            style={{ background: "#f27777", color: "white" }}
+          >
             Login
           </button>
         </form>
