@@ -156,39 +156,6 @@ export default function Navbar() {
                 </Link>
               </li>
             )}
-
-            {/* REGISTER link */}
-            {!user && (
-              <li className="nav-item">
-                <Link className="nav-link fw-semibold" to="/register">
-                  <i
-                    className="bi bi-person-plus"
-                    title="Register"
-                    style={{
-                      fontSize: "1.3rem",
-                      color: "rgb(244, 119, 119)",
-                    }}
-                  ></i>
-                </Link>
-              </li>
-            )}
-
-            {/* ADMIN LOGIN link */}
-            {!user && (
-              <li className="nav-item">
-                <Link className="nav-link fw-semibold" to="/admin-login">
-                  <i
-                    className="bi bi-shield-lock"
-                    title="Admin Login"
-                    style={{
-                      fontSize: "1.3rem",
-                      color: "rgb(244, 119, 119)",
-                    }}
-                  ></i>
-                </Link>
-              </li>
-            )}
-
             {/* USER account */}
             {user && user.role === "user" && (
               <li className="nav-item">

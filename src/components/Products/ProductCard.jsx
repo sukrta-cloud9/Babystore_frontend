@@ -3,7 +3,7 @@ import { FaStar, FaHeart, FaShoppingCart } from "react-icons/fa";
 import { useWishlist } from "../../context/WishlistContext";
 import { useAuth } from "../../context/AuthContext";
 import { useNavigate } from "react-router-dom";
-import { useCart } from "../../context/CartContext"; 
+import { useCart } from "../../context/CartContext";
 import "./Products.css";
 
 const ProductCard = ({ id, name, price, img, rating, offer }) => {
@@ -36,7 +36,10 @@ const ProductCard = ({ id, name, price, img, rating, offer }) => {
       offer,
       quantity: 1,
     });
+  };
 
+  const handleView = () => {
+    navigate(`/product/${id}`);
   };
 
   return (
@@ -64,6 +67,11 @@ const ProductCard = ({ id, name, price, img, rating, offer }) => {
 
         <button className="cart-btn" onClick={handleAddToCart}>
           <FaShoppingCart /> Add to Cart
+        </button>
+
+        {/* ⭐ NEW VIEW BUTTON */}
+        <button className="like-btn" onClick={handleView}>
+          View
         </button>
       </div>
     </div>

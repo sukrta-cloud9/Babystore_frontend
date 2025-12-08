@@ -1,42 +1,46 @@
 import React, { useEffect, useState } from "react";
+import AddProduct from "../components/Admin/AddProduct";
+import ProductsTable from "../components/Admin/ProductsTable";
+import UsersTable from "../components/Admin/UsersTable";
 
 export default function AdminDashboard() {
-  const [users, setUsers] = useState([]);
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    // Fetch all users
-    fetch("http://localhost:5001/users")
-      .then((res) => res.json())
-      .then((data) => setUsers(data));
-
-    // Fetch all products
-    fetch("http://localhost:5001/products")
-      .then((res) => res.json())
-      .then((data) => setProducts(data));
-  }, []);
+  const [section, setSection] = useState("users");
 
   return (
     <div className="container mt-4">
-      <h2>Admin Dashboard</h2>
 
-      <h4 className="mt-4">Users</h4>
-      <ul>
-        {users.map((u) => (
-          <li key={u.id}>
-            {u.name} - {u.email} - {u.role} - {u.active ? "Active" : "Inactive"}
-          </li>
-        ))}
-      </ul>
+      <h2 className="text-center mb-4" style={{ color: "#f27777" }}>
+        Admin Dashboard
+      </h2>
 
-      <h4 className="mt-4">Products</h4>
-      <ul>
-        {products.map((p) => (
-          <li key={p.id}>
-            {p.name} - ₹{p.price} - {p.category}
-          </li>
-        ))}
-      </ul>
+      {/* Navigation Tabs */}
+      <div className="d-flex gap-3 mb-4">
+        <button
+          className={`btn ${section === "users" ? "btn-danger" : "btn-outline-danger"}`}
+          onClick={() => setSection("users")}
+        >
+          Manage Users
+        </button>
+
+        <button
+          className={`btn ${section === "products" ? "btn-danger" : "btn-outline-danger"}`}
+          onClick={() => setSection("products")}
+        >
+          Products List
+        </button>
+
+        <button
+          className={`btn ${section === "add" ? "btn-danger" : "btn-outline-danger"}`}
+          onClick={() => setSection("add")}
+        >
+          Add New Product
+        </button>
+      </div>
+
+      {/* Load Selected Section */}
+      {section === "users" && <UsersTable />}
+      {section === "products" && <ProductsTable />}
+      {section === "add" && <AddProduct />}
     </div>
   );
 }

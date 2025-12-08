@@ -21,9 +21,7 @@ export default function PaymentSuccess() {
         Thank you for shopping with BabyBay 💗
       </p>
 
-      <Link to="/orders" className="btn btn-danger">
-        View My Orders
-      </Link>
+      {/* Removed View Orders Button */}
 
       <Link to="/products" className="btn btn-outline-danger mt-2">
         Continue Shopping

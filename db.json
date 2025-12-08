@@ -41,51 +41,174 @@
       "active": true
     }
   ],
+
   "products": [
     {
       "id": "1",
-      "name": "Baby Cotton Romper",
-      "category": "Clothing",
-      "price": 799,
-      "image": "https://via.placeholder.com/200",
-      "description": "Soft and breathable cotton romper for babies.",
+      "name": "Soft Cotton Infant Dress",
+      "category": "Infants",
+      "price": 599,
+      "image": "/assets/infantfrock.png",
+      "description": "Soft Cotton Infant Dress",
+      "rating": 4.5,
+      "offer": "10% OFF",
       "active": true
     },
     {
       "id": "2",
-      "name": "Baby Feeding Bottle",
-      "category": "Feeding",
+      "name": "Feeding Bottle Set",
+      "category": "Infants",
+      "price": 399,
+      "image": "/assets/feedingbottle.png",
+      "description": "Feeding Bottle Set",
+      "rating": 4,
+      "active": true
+    },
+    {
+      "id": "3",
+      "name": "Baby oils and lotions",
+      "category": "Infants",
+      "price": 490,
+      "image": "/assets/babyoil.png",
+      "description": "Baby oils and lotions",
+      "rating": 4,
+      "active": true
+    },
+    {
+      "id": "4",
+      "name": "Wrappers and Towels",
+      "category": "Infants",
+      "price": 699,
+      "image": "/assets/towel.png",
+      "description": "Wrappers and Towels",
+      "rating": 4.5,
+      "active": true
+    },
+    {
+      "id": "5",
+      "name": "Soft Toys",
+      "category": "Toddlers",
+      "price": 799,
+      "image": "/assets/softtoys.png",
+      "description": "Soft Toys",
+      "rating": 4,
+      "active": true
+    },
+    {
+      "id": "6",
+      "name": "Tiny Car",
+      "category": "Toddlers",
+      "price": 1050,
+      "image": "/assets/toddlerrider.png",
+      "description": "Tiny Car",
+      "rating": 4,
+      "active": true
+    },
+    {
+      "id": "7",
+      "name": "Play Books",
+      "category": "Toddlers",
+      "price": 300,
+      "image": "/assets/toddlerbook.png",
+      "description": "Play Books",
+      "rating": 4,
+      "active": true
+    },
+    {
+      "id": "8",
+      "name": "Tees & Frocks",
+      "category": "Toddlers",
+      "price": 599,
+      "image": "/assets/toddlercloth.png",
+      "description": "Tees & Frocks",
+      "rating": 4,
+      "active": true
+    },
+    {
+      "id": "9",
+      "name": "Shoes",
+      "category": "Kids",
+      "price": 699,
+      "image": "/assets/kidsshoes.png",
+      "description": "Shoes",
+      "rating": 3.5,
+      "active": true
+    },
+    {
+      "id": "10",
+      "name": "Study Table",
+      "category": "Kids",
+      "price": 1550,
+      "image": "/assets/studytable.png",
+      "description": "Study Table",
+      "rating": 4.5,
+      "active": true
+    },
+    {
+      "id": "11",
+      "name": "Wooden Alphabet Board",
+      "category": "Kids",
+      "price": 999,
+      "image": "/assets/alphabetboard.png",
+      "description": "Wooden Alphabet Board",
+      "rating": 4,
+      "active": true
+    },
+    {
+      "id": "12",
+      "name": "Coloring Books and Crayons",
+      "category": "Kids",
+      "price": 350,
+      "image": "/assets/crayonbook.png",
+      "description": "Coloring Books and Crayons",
+      "rating": 4,
+      "active": true
+    },
+
+    
+    {
+      "id": "13",
+      "name": "Maternity Nightware",
+      "category": "Maternity",
+      "price": 899,
+      "image": "/assets/maternity-nightware.png",
+      "description": "Maternity Nightware",
+      "rating": 4,
+      "offer": "20% OFF",
+      "active": true
+    },
+    {
+      "id": "14",
+      "name": "Maternity Pads",
+      "category": "Maternity",
       "price": 299,
-      "image": "https://via.placeholder.com/200",
-      "description": "BPA-free feeding bottle for safe feeding.",
+      "image": "/assets/maternity-pads.png",
+      "description": "Maternity Pads",
+      "rating": 4,
+      "offer": "20% OFF",
+      "active": true
+    },
+    {
+      "id": "15",
+      "name": "Protein Powder",
+      "category": "Maternity",
+      "price": 2100,
+      "image": "/assets/protein-powder.png",
+      "description": "Protein Powder",
+      "rating": 4,
+      "offer": "20% OFF",
+      "active": true
+    },
+    {
+      "id": "16",
+      "name": "Vitamins & Minerals Suppliment Tablets",
+      "category": "Maternity",
+      "price": 900,
+      "image": "/assets/vitamins-minerals.png",
+      "description": "Vitamins & Minerals Suppliment Tablets",
+      "rating": 4,
+      "offer": "20% OFF",
       "active": true
     }
-  ],
-  "cart": [
-    {
-      "id": "87e3",
-      "userId": "2",
-      "items": [
-        {
-          "productId": 4,
-          "qty": 2,
-          "name": "Wrappers and Towels",
-          "price": null
-        },
-        {
-          "productId": 3,
-          "qty": 1,
-          "name": "Baby oils and lotions",
-          "price": null
-        },
-        {
-          "productId": 11,
-          "qty": 1,
-          "name": "Wooden Alphabet Board",
-          "price": null
-        }
-      ]
-    }
-  ],
-  "orders": []
+  ]
 }

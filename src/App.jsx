@@ -12,26 +12,47 @@ import CartPage from "./pages/CartPage";
 import PaymentSuccess from "./pages/PaymentSuccess";
 import Checkout from "./pages/Checkout";
 import AdminDashboard from "./pages/AdminDashboard";
+import ProductDetails from "./pages/ProductDetails";
+import OrdersPage from "./pages/OrdersPage";
+
+
 
 function App() {
   return (
     <>
-      <Navbar />
+      {/* Hide Navbar & Footer on admin pages */}
       <Routes>
-        <Route path="/" element={<Home />} /> 
-        <Route path="/Home" element={<Home />} />
-        <Route path="/login" element={<UserLogin />} />
-        <Route path="/admin-login" element={<AdminLogin />} />
-        <Route path="/register" element={<Register />} />  {/* <-- Added this */}
-        <Route path="/products" element={<Products />} />
-        <Route path="/wishlist" element={<WishlistPage />} />
-        <Route path="/cart" element={<CartPage />} />
-        <Route path="/payment-success" element={<PaymentSuccess />} />
-        <Route path="/checkout" element={<Checkout />} />
-        <Route path="/admin" element={<AdminDashboard />} />
+        <Route
+          path="/admin/*"
+          element={<AdminDashboard />}
+        />
 
+        {/* USER ROUTES */}
+        <Route
+          path="*"
+          element={
+            <>
+              <Navbar />
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/home" element={<Home />} />
+                <Route path="/login" element={<UserLogin />} />
+                <Route path="/register" element={<Register />} />
+                <Route path="/products" element={<Products />} />
+                <Route path="/wishlist" element={<WishlistPage />} />
+                <Route path="/cart" element={<CartPage />} />
+                <Route path="/payment-success" element={<PaymentSuccess />} />
+                <Route path="/checkout" element={<Checkout />} />
+                <Route path="/product/:id" element={<ProductDetails />} />
+                <Route path="/orders" element={<OrdersPage />} />
+
+
+              </Routes>
+              <Footer />
+            </>
+          }
+        />
       </Routes>
-      <Footer />
     </>
   );
 }
