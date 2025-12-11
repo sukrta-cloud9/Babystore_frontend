@@ -7,11 +7,11 @@ import Hero5 from "../components/Hero5";
 const Home = () => {
   return (
     <div>
-      <Hero1 />
-      <Hero2 />
-      <Hero3 />
-      <Hero4 />
-      <Hero5 />
+       <Hero1 />
+       <Hero2 />
+       <Hero3 />
+       <Hero4 />
+      <Hero5 /> 
     </div>
   );
 };
