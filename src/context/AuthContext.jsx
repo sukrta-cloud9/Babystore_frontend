@@ -34,7 +34,7 @@ export const AuthProvider = ({ children }) => {
   // Helper: fetch users from JSON server (returns array or [])
   const fetchUsersFromServer = async () => {
     try {
-      const res = await fetch("http://localhost:5001/users");
+      const res = await fetch("http://localhost:5000/users");
       if (!res.ok) return [];
       const users = await res.json();
       return Array.isArray(users) ? users : [];
@@ -114,7 +114,7 @@ export const AuthProvider = ({ children }) => {
       };
 
       // POST to JSON server
-      const res = await fetch("http://localhost:5001/users", {
+      const res = await fetch("http://localhost:5000/users", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newUser),
