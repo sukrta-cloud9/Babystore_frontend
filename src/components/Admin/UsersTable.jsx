@@ -4,13 +4,13 @@ export default function UsersTable() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5001/users")
+    fetch("http://localhost:5000/users")
       .then(res => res.json())
       .then(data => setUsers(data));
   }, []);
 
   const toggleUserStatus = async (id, currentStatus) => {
-    await fetch(`http://localhost:5001/users/${id}`, {
+    await fetch(`http://localhost:5000/users/${id}`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ active: !currentStatus }),

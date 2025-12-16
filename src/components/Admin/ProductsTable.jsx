@@ -4,13 +4,13 @@ export default function ProductsTable() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5001/products")
+    fetch("http://localhost:5000/products")
       .then(res => res.json())
       .then(data => setProducts(data));
   }, []);
 
   const toggleActive = async (id, currentStatus) => {
-    await fetch(`http://localhost:5001/products/${id}`, {
+    await fetch(`http://localhost:5000/products/${id}`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ active: !currentStatus }),
@@ -20,7 +20,7 @@ export default function ProductsTable() {
   };
 
   const deleteProduct = async (id) => {
-    await fetch(`http://localhost:5001/products/${id}`, { method: "DELETE" });
+    await fetch(`http://localhost:5000/products/${id}`, { method: "DELETE" });
     setProducts(products.filter(p => p.id !== id));
   };
 
