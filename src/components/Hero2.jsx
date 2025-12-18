@@ -12,7 +12,7 @@ export default function Hero2() {
 
           <div className="col-6 col-md-3 mb-4">
             <div className="category-card">
-              <img src="/assets/happy baby hd image.jpg" alt="Infants" className="category-img" />
+              <img src="/assets/happy-baby-hd-image.jpg" alt="Infants" className="category-img" />
               <p className="category-text">For Infants</p>
             </div>
           </div>
