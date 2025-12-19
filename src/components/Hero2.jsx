@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Hero2.css";
 
+
 export default function Hero2() {
   return (
     <section className="hero2-section text-center py-5">
@@ -12,28 +13,28 @@ export default function Hero2() {
 
           <div className="col-6 col-md-3 mb-4">
             <div className="category-card">
-              <img src="/assets/happy-baby-hd-image.jpg" alt="Infants" className="category-img" />
+              <img src="/happy-baby-hd-image.jpg"alt="Infants" className="category-img" />
               <p className="category-text">For Infants</p>
             </div>
           </div>
 
           <div className="col-6 col-md-3 mb-4">
             <div className="category-card">
-              <img src="/assets/toddler.png" alt="Toddlers" className="category-img" />
+              <img src="/toddler.png" alt="Toddlers" className="category-img" />
               <p className="category-text">For Toddlers</p>
             </div>
           </div>
 
           <div className="col-6 col-md-3 mb-4">
             <div className="category-card">
-              <img src="/assets/kids.png" alt="Kids" className="category-img" />
+              <img src="/kids.png" alt="Kids" className="category-img" />
               <p className="category-text">For Kids</p>
             </div>
           </div>
 
           <div className="col-6 col-md-3 mb-4">
             <div className="category-card">
-              <img src="/assets/maternity.png" alt="Mothers" className="category-img" />
+              <img src="/maternity.png" alt="Mothers" className="category-img" />
               <p className="category-text">Maternity Care</p>
             </div>
           </div>

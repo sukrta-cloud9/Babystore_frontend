@@ -22,7 +22,7 @@ export default function Hero4() {
             <div className="d-flex justify-content-center gap-4 flex-wrap">
               <div className="offer-card">
                 <img
-                  src="/assets/infantproduct.png"
+                  src="/infantproduct.png"
                   alt="Infant Care"
                   className="offer-img"
                 />
@@ -32,7 +32,7 @@ export default function Hero4() {
 
               <div className="offer-card">
                 <img
-                  src="/assets/toddlerproduct.jpeg"
+                  src="/toddlerproduct.jpeg"
                   alt="Toddler Wear"
                   className="offer-img"
                 />
@@ -47,7 +47,7 @@ export default function Hero4() {
             <div className="d-flex justify-content-center gap-4 flex-wrap">
               <div className="offer-card">
                 <img
-                  src="/assets/kidsAccessories.jpeg"
+                  src="/kidsAccessories.jpeg"
                   alt="Kids Accessories"
                   className="offer-img"
                 />
@@ -57,7 +57,7 @@ export default function Hero4() {
 
               <div className="offer-card">
                 <img
-                  src="/assets/maternityproduct.jpeg"
+                  src="/maternityproduct.jpeg"
                   alt="Maternity"
                   className="offer-img"
                 />

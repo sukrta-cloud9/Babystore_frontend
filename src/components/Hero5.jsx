@@ -10,7 +10,7 @@ export default function Hero5() {
         {/* Testimonial Card 1 */}
         <div className="testimonial-card">
           <img
-            src="/assets/testinewmom.png"
+            src="/testinewmom.png"
             alt="Sarah M."
             className="customer-pic"
           />
@@ -23,7 +23,7 @@ export default function Hero5() {
         {/* Testimonial Card 2 */}
         <div className="testimonial-card">
           <img
-            src="/assets/momsitting.png"
+            src="/momsitting.png"
             alt="Priya K."
             className="customer-pic"
           />
@@ -36,7 +36,7 @@ export default function Hero5() {
         {/* Testimonial Card 3 */}
         <div className="testimonial-card">
           <img
-            src="/assets/momkid.png"
+            src="/momkid.png"
             alt="Priya K."
             className="customer-pic"
           />
