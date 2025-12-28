@@ -11,7 +11,7 @@ const ProductsList = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await fetch("https://babystore-frontend.onrender.com");
+        const res = await fetch("https://babystore-backend2.onrender.com/products");
         if (!res.ok) throw new Error("Failed to fetch products");
         const data = await res.json();
         setProducts(data);
@@ -53,7 +53,7 @@ const ProductsList = () => {
                     id={product.id}
                     name={product.name}
                     price={`₹${product.price}`}
-                    img={product.image}       // ✅ fixed: pass as 'img'
+                    img={product.image}       
                     rating={product.rating}
                     offer={product.offer}
                   />

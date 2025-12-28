@@ -25,16 +25,16 @@ export const AuthProvider = ({ children }) => {
     },
   ];
 
-  // Load saved user from localStorage
+  
   useEffect(() => {
     const saved = localStorage.getItem("user");
     if (saved) setUser(JSON.parse(saved));
   }, []);
 
-  // Helper: fetch users from JSON server (returns array or [])
+  
   const fetchUsersFromServer = async () => {
     try {
-      const res = await fetch("https://babystore-frontend.onrender.com");
+      const res = await fetch("https://babystore-backend2.onrender.com/users");
       if (!res.ok) return [];
       const users = await res.json();
       return Array.isArray(users) ? users : [];
@@ -113,8 +113,8 @@ export const AuthProvider = ({ children }) => {
         active: true,
       };
 
-      // POST to JSON server
-      const res = await fetch("https://babystore-frontend.onrender.com", {
+      
+      const res = await fetch("https://babystore-backend2.onrender.com/users", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newUser),

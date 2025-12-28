@@ -17,7 +17,7 @@ export default function ProductDetails() {
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
-    fetch(`https://babystore-frontend.onrender.com/products/${id}`)
+    fetch(`https://babystore-backend2.onrender.com/products/${id}`)
       .then((res) => res.json())
       .then((data) => setProduct(data));
   }, [id]);

@@ -14,8 +14,7 @@ const WishlistPage = () => {
 
     removeFromWishlist(product.id);
 
-    // ❌ Do NOT navigate — this caused your blank page  
-    // navigate("/cart");
+    
   };
 
   if (!wishlist || wishlist.length === 0) {
