@@ -41,6 +41,7 @@ const ProductCard = ({ id, name, price, img, rating, offer }) => {
   const handleView = () => {
     navigate(`/product/${id}`);
   };
+  console.log("Product image path:", img);
 
   return (
     <div className="product-card">
