@@ -46,7 +46,12 @@ export default function Navbar() {
           <img
             src="/logo.svg"
             alt="BabyBay Logo"
-            style={{ height: "500px", width: "400px", objectFit: "contain" }}
+            {/*style={{ height: "500px", width: "400px", objectFit: "contain" }}*/}
+            style={{
+              height: window.innerWidth <= 768 ? "45px" : "70px",
+              width: "auto",
+              objectFit: "contain",
+            }}
           />
         </Link>
 
