@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function Hero1() {
   return (
-    <section className="hero-section">
+    <section className="hero-section d-flex align-items-center justify-content-center text-center">
       <div className="hero-content">
         <h1>Wrap Your Baby with Love</h1>
         <p>Made with care, crafted for your little one...</p>
