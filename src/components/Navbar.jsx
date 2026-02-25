@@ -34,6 +34,8 @@ export default function Navbar() {
       style={{
         height: "80px",
         background: "linear-gradient(to right, #FEC8D8, #C6E2E9)",
+        position:"relative",
+        zIndex:1000,
       }}
     >
       <div className="container-fluid">
@@ -70,7 +72,13 @@ export default function Navbar() {
         </button>
 
         {/* Navbar Links */}
-        <div className="collapse navbar-collapse" id="navbarNav">
+        <div className="collapse navbar-collapse" id="navbarNav"
+        style={{
+          backgroundColor:"FEC8D8",
+          padding:"10px",
+          borderRadius:"10px",
+        }}
+        >
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <Link className="nav-link fw-semibold" to="/Home">
