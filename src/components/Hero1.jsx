@@ -5,14 +5,12 @@ import { Link } from "react-router-dom";
 export default function Hero1() {
   return (
     <section className="hero-section">
-      <div className="hero-inner">
+      <div className="hero-content">
         <h1>Wrap Your Baby with Love</h1>
         <p>Made with care, crafted for your little one...</p>
-      
-      
-      <p className="tagline">
-        Every product brings comfort, safety, and hugs your <br/>little one with warmth.
-      </p>
+      </div>
+      <div className="content2 mt-3">
+      <p >Every product brings comfort, safety, and hugs your <br/>little one with warmth.</p>
       
 <Link to="/products" className="pastel-btn">Shop Now</Link>
 
