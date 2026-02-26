@@ -89,3 +89,42 @@
         transform: translateY(-4px);
         box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
       }
+
+
+     
+
+@media (max-width: 768px) {
+
+  .hero-section {
+    height: auto;              
+    min-height: 100vh;
+    padding: 40px 20px;
+    background-position: center;
+  }
+
+  .hero-content {
+    padding-left: 0 !important;
+    padding-bottom: 0 !important;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .content2 {
+    margin-left: 0 !important;
+    margin-bottom: 0 !important;
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .pastel-btn {
+    font-size: 1rem;
+    padding: 10px 22px;
+  }
+}
