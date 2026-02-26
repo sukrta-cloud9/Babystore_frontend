@@ -73,8 +73,16 @@
   }
 }
 @media (max-width: 576px) {
-  nav img {
-    height: 80px !important;
-    width: auto !important;
+
+  
+  nav .position-absolute {
+    top: 60% !important;
   }
+
+  
+  .navbar-toggler {
+    position: relative;
+    z-index: 2000;
+  }
+
 }
