@@ -84,6 +84,11 @@
     display: flex;
     justify-content: center;
   }
+  .navbar img
+  {
+    height:70px;
+    width: auto;
+  }
 
   
   .navbar-toggler {
