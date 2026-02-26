@@ -72,4 +72,9 @@
     transform: scale(1);
   }
 }
-
+@media (max-width: 576px) {
+  nav img {
+    height: 80px !important;
+    width: auto !important;
+  }
+}

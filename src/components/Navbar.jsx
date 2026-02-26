@@ -50,7 +50,7 @@ export default function Navbar() {
       <img
         src="/logo.svg"
         alt="BabyBay Logo"
-        className="d-block d-lg-none"
+        className="d-block "
         style={{ height: "500px", width: "400px", objectFit: "contain" }}
       />
 
