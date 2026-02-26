@@ -45,12 +45,7 @@ export default function Navbar() {
           className="position-absolute top-50 start-50 translate-middle"
           style={{ textDecoration: "none" }}
         >
-      <img
-        src="/logo.svg"
-        alt="BabyBay Logo"
-        className="d-lg-block d-none"
-        style={{ height: "70px", width: "auto", objectFit: "contain" }}
-      />
+      
 
       <img
         src="/logo.svg"
